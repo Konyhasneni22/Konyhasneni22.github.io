@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <!--Menü-->
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="../img/icons/clover.svg" alt="Lucky">Lucky
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Kezdőlap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../kavefajtak.html">Kávéfajták</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../sutemenyek.html">Sütemények</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class = "banner">
+      </div>
+    </header>
+      <!-- Container -->
+    <article class="container">
+        <div class="row">
+          <h1 class="my-5">Lucky - Reggeli ráhangolódás</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 offset-sm-1">
+        <img src="../img/Reggeli kávé-min.jpg" alt="Reggeli hangulat">
+      </div>
+      <div class="col-sm-7">
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, necessitatibus porro hic doloribus, ea aliquam alias qui natus sed maiores id eum dicta obcaecati? Enim voluptatibus iure amet voluptatum pariatur.</p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, necessitatibus porro hic doloribus, ea aliquam alias qui natus sed maiores id eum dicta obcaecati? Enim voluptatibus iure amet voluptatum pariatur.
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, necessitatibus porro hic doloribus, ea aliquam alias qui natus sed maiores id eum dicta obcaecati? Enim voluptatibus iure amet voluptatum pariatur.
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, necessitatibus porro hic doloribus, ea aliquam alias qui natus sed maiores id eum dicta obcaecati? Enim voluptatibus iure amet voluptatum pariatur.
+</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, necessitatibus porro hic doloribus, ea aliquam alias qui natus sed maiores id eum dicta obcaecati? Enim voluptatibus iure amet voluptatum pariatur.</p>
+<p class  = "szerzo">Szerző: Tüdő R. Ákos</p>
+
+      </div>
+    </div>
+    </article>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="blog_h2">Hozzászólások</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-11 offset-1">
+          <span class="badge bg-success"><h6>Feri</h6></span>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. ^-^</p>
+          <span class="badge bg-success"><h6>Luca</h6></span>
+          <p>Adipisicing elit. Lorem ipsum dolor sit, amet consectetur! </p>
+        </div>
+        <hr>
+       
+      </div>
+      <input type="text" class="offset-1" id="comment-box" onclick="neviras();" placeholder="Adja meg a nevét.">
+      <input type="text" class="offset-1" id="comment-box" onclick="komment();" placeholder="Írjon be egy kommentet.">
+      <button id="post" >Közzétesz.</button>
+    </div>
+        
+        
+        
+       
+        <footer class="row mt-5 px-3">
+          <div class="col-sm-6 col-lg-4 offset-lg-1">
+          <h2>Elérhetőség:</h2>
+          <ul>
+            <li><img src="../img/icons/envelope.svg">6900 Makó, Posta utca 4-6</li>
+            <li><img src="../img/icons/at.svg" alt="">06 (30) 590-1404</li>
+            <li><img src="../img/icons/telephone.svg" alt="">Luckykavezo@gmail.com</li>
+          </ul>
+        </div>
+          <div class="col-sm-6 col-lg-4 offset-lg-1">
+          <h2>Feliratkozás hírlevélre:</h2>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" id= "email" aria-describedby="button-addon2">
+            <button class="btn btn-success" type="button" id="button-addon2" onclick="feliratkozas();">Feliratkozás</button>
+          </div>
+        </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script>
+      function feliratkozas(){
+        let email = document.getElementById('email').value;
+        if(email != "@"){
+          alert("Kérem írjon be egy helyes e-mail címet!");
+        }
+        if(email == "@"){
+          alert("Sikeresen feliratkozott a hírlevélre!");
+
+        }
+      }
+
+
+    </script>
+</body>
+</html>
